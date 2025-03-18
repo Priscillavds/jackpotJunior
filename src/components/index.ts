@@ -3,8 +3,6 @@ import { Button } from './ui/Button';
 import { ButtonIcon } from './ui/ButtonIcon';
 import { Checkbox } from './ui/Checkbox';
 import { Controllers } from './game/Controllers';
-import { Footer } from './ui/Footer';
-import { Header } from './ui/Header';
 import { InputNumber } from './ui/InputNumber';
 import { Lights } from './game/Lights';
 import { Loader } from './game/Loader';
@@ -27,8 +25,6 @@ export {
   ButtonIcon,
   Checkbox,
   Controllers,
-  Footer,
-  Header,
   InputNumber,
   Lights,
   Loader,

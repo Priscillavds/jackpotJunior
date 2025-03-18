@@ -5,8 +5,6 @@ import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
 import {
   About,
-  Footer,
-  Header,
   Loader,
   Modal,
   ResetGame,
@@ -89,11 +87,9 @@ const App = () => {
         <ToastContext.Provider value={{ addToast }}>
           {isLoading && <Loader loadingTime={LOADING_TIME} onLoadEnd={onLoadEnd} />}
           <div className={`${styles.app} ${isLoading ? styles['app--loading'] : ''}`}>
-            <Header />
             <main>
               <SlotMachine />
             </main>
-            <Footer />
           </div>
           <Modal
             title={modalData?.title || ''}
