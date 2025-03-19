@@ -10,7 +10,8 @@ export interface PersistedState {
   readonly settings: ReturnType<typeof settingsReducer>;
   readonly slotMachine: Pick<
     ReturnType<typeof slotMachineReducer>,
-    'credits' | 'freeSpins' | 'resetGameOnMount'
+    //'credits' | 'freeSpins' | 'resetGameOnMount'
+    'credits' | 'resetGameOnMount'
   >;
 }
 

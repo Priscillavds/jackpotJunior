@@ -43,21 +43,24 @@ const saveItemInStorage = <T>(collection: string, item: T) => {
 
 const getHasOnGoingGame = (persistedState: PersistedState): boolean => {
   const {
-    slotMachine: { freeSpins, credits },
+    //slotMachine: { freeSpins, credits },
+    slotMachine: { credits },
   } = persistedState;
-  return credits !== INITIAL_CREDITS || freeSpins !== 0;
+  //return credits !== INITIAL_CREDITS || freeSpins !== 0;
+  return credits !== INITIAL_CREDITS;
 };
 
 const getStateToPersist = (state: State): PersistedState => {
   const {
     settings,
-    slotMachine: { credits, freeSpins, resetGameOnMount },
+    //slotMachine: { credits, freeSpins, resetGameOnMount },
+    slotMachine: { credits, resetGameOnMount },
   } = state;
   return {
     settings,
     slotMachine: {
       credits,
-      freeSpins,
+      //freeSpins,
       resetGameOnMount,
     },
   };

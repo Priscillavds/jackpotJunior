@@ -84,7 +84,7 @@ export type PayLineResult = {
 
 export type SlotScreenResult = {
   winAmount: number;
-  freeSpins: number;
+  //freeSpins: number;
   bonusFactor: number;
   winPayLines: PayLine[];
 };

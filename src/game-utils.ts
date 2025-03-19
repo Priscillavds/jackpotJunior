@@ -6,7 +6,7 @@ import {
   PAY_LINES_METADATA,
   WILDCARD_METADATA,
   SCATTER_METADATA,
-  FREE_SPINS_NUMBER,
+  //FREE_SPINS_NUMBER,
   EXPLOSIVE_METADATA,
   REELS_NUMBER,
   BONUS_WILDCARDS_NUMBER,
@@ -167,7 +167,7 @@ export const getScreenResult = (slotScreen: Symbol[][]): SlotScreenResult => {
   const winPayLines: PayLine[] = [];
   let bonusFactor: number = 0;
   let winAmount: number = 0;
-  let freeSpins: number = 0;
+  //let freeSpins: number = 0;
 
   for (const payLine of payLines) {
     const { currentSymbolType, numberOfSymbolsInLine, initialPositionIndex } = getPayLineResult(
@@ -183,9 +183,9 @@ export const getScreenResult = (slotScreen: Symbol[][]): SlotScreenResult => {
       bonusFactor = numberOfSymbolsInLine;
     }
 
-    if (currentSymbolType === SCATTER_METADATA.type) {
+    /* if (currentSymbolType === SCATTER_METADATA.type) {
       freeSpins += FREE_SPINS_NUMBER;
-    }
+    } */
 
     const winFactor: number = findWinFactor(currentSymbolType as SymbolType, numberOfSymbolsInLine);
     winAmount += winFactor;
@@ -202,6 +202,6 @@ export const getScreenResult = (slotScreen: Symbol[][]): SlotScreenResult => {
     winAmount,
     winPayLines,
     bonusFactor,
-    freeSpins,
+    //freeSpins,
   };
 };

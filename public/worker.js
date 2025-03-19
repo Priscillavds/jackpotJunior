@@ -181,7 +181,7 @@ var getScreenResult = function (slotScreen) {
     var winPayLines = [];
     var bonusFactor = 0;
     var winAmount = 0;
-    var freeSpins = 0;
+    //var freeSpins = 0;
     for (var _i = 0, payLines_1 = payLines; _i < payLines_1.length; _i++) {
         var payLine = payLines_1[_i];
         var _a = getPayLineResult(slotScreen, payLine), currentSymbolType = _a.currentSymbolType, numberOfSymbolsInLine = _a.numberOfSymbolsInLine, initialPositionIndex = _a.initialPositionIndex;

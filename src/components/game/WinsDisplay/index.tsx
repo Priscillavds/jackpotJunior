@@ -7,12 +7,12 @@ import styles from './styles.module.scss';
 
 const WinsDisplay: React.FC = () => {
   const credits = useSelector((state: State) => state.slotMachine.credits);
-  const freeSpins = useSelector((state: State) => state.slotMachine.freeSpins);
+  //const freeSpins = useSelector((state: State) => state.slotMachine.freeSpins);
   const winPayLines = useSelector((state: State) => state.slotMachine.winPayLines);
   const [t] = useTranslation();
 
   const displayedCredits = useCounter(credits);
-  const displayedFreeSpins = useCounter(freeSpins);
+  //const displayedFreeSpins = useCounter(freeSpins);
 
   return (
     <header className={styles['wins-display']}>
@@ -31,8 +31,8 @@ const WinsDisplay: React.FC = () => {
         <Lights blink={!!winPayLines?.length} />
       </div>
       <div
-        title={t('slot.freeSpinsDescription', { freeSpins })}
-        aria-label={t('slot.freeSpinsDescription', { freeSpins })}
+        //title={t('slot.freeSpinsDescription', { freeSpins })}
+        //aria-label={t('slot.freeSpinsDescription', { freeSpins })}
       >
         <p className={styles['wins-display__tag']}>{t('slot.freeSpins')}</p>
         <div className={styles['wins-display__display-wrapper']}>
@@ -40,7 +40,7 @@ const WinsDisplay: React.FC = () => {
           <p
             className={`${styles['wins-display__display']} ${styles['wins-display__display--green']}`}
           >
-            {displayedFreeSpins}
+            {/* {displayedFreeSpins} */}
           </p>
         </div>
       </div>

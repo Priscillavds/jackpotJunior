@@ -13,7 +13,7 @@ import {
 
 export interface State {
   readonly credits: number;
-  readonly freeSpins: number;
+  //readonly freeSpins: number;
   readonly resetGameOnMount: boolean | null;
   readonly bet: number;
   readonly isSpinning: boolean;
@@ -28,7 +28,7 @@ export interface State {
 export const initialState: State = {
   credits: INITIAL_CREDITS,
   bet: DEFAULT_BET,
-  freeSpins: 0,
+  //freeSpins: 0,
   isAutoSpinOn: false,
   isSpinning: false,
   showPayLines: false,
@@ -60,7 +60,7 @@ export const reducer = (state = initialState, action: Action): State => {
         ...state,
         bet: action.payload,
       };
-    case SPAN:
+    /* case SPAN:
       const hasFreeSpins: boolean = state.freeSpins > 0;
       const updatedFreeSpins = hasFreeSpins ? state.freeSpins - 1 : state.freeSpins;
       const updatedCredits = !hasFreeSpins ? state.credits - state.bet : state.credits;
@@ -72,9 +72,10 @@ export const reducer = (state = initialState, action: Action): State => {
         isSpinning: true,
         showPayLines: false,
         hasOngoingGame: true,
-      };
+      }; */
     case SPIN_ENDED:
-      const { slotResult: { winAmount, freeSpins, winPayLines, bonusFactor }, bonusWildcardsPositions } = action.payload;
+      // const { slotResult: { winAmount, freeSpins, winPayLines, bonusFactor }, bonusWildcardsPositions } = action.payload;
+      const { slotResult: { winAmount, winPayLines, bonusFactor }, bonusWildcardsPositions } = action.payload;
       let winnings: number =  winAmount * state.bet;
       if (!!bonusFactor) {
         winnings *= bonusFactor;
@@ -84,7 +85,7 @@ export const reducer = (state = initialState, action: Action): State => {
         ...state,
         isSpinning: false,
         credits: state.credits + winnings,
-        freeSpins: state.freeSpins + freeSpins,
+        //freeSpins: state.freeSpins + freeSpins,
         winPayLines,
         bonusFactor,
         showPayLines: !!winPayLines.length,
