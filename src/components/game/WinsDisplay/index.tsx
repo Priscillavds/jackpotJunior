@@ -12,7 +12,7 @@ const WinsDisplay: React.FC = () => {
   const [t] = useTranslation();
 
   const displayedCredits = useCounter(credits);
-  const displayedFreeSpins = useCounter(freeSpins);
+  //const displayedFreeSpins = useCounter(freeSpins);
 
   return (
     <header className={styles['wins-display']}>
@@ -27,23 +27,9 @@ const WinsDisplay: React.FC = () => {
         </div>
       </div>
       <div>
-        <h2>JS SLOTS</h2>
         <Lights blink={!!winPayLines?.length} />
       </div>
-      <div
-        title={t('slot.freeSpinsDescription', { freeSpins })}
-        aria-label={t('slot.freeSpinsDescription', { freeSpins })}
-      >
-        <p className={styles['wins-display__tag']}>{t('slot.freeSpins')}</p>
-        <div className={styles['wins-display__display-wrapper']}>
-          <span className={styles['wins-display__spins']}></span>
-          <p
-            className={`${styles['wins-display__display']} ${styles['wins-display__display--green']}`}
-          >
-            {displayedFreeSpins}
-          </p>
-        </div>
-      </div>
+
     </header>
   );
 };

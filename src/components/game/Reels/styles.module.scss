@@ -30,19 +30,13 @@ $reels-height: calc($rows-number * $symbol-size-small + $reels-padding * 2);
   column-gap: $reels-gap;
   padding: 0.625rem;
   height: $reels-height;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  background: linear-gradient(to bottom, $color-pink, $color-blue);
 
   &__bonus {
     font-size: calc($font-huge * 0.75);
     font-family: $font-title;
     color: $color-orange;
     animation: bonus-small 1s 0.2s ease-in-out forwards;
-    -webkit-animation: bonus 1s 0.2s ease-in-out forwards;
+    -webkit-animation: bonus-small 1s 0.2s ease-in-out forwards;
     position: absolute;
     transform: translate(-50%, calc($reels-height / 2)) scale(0);
     left: 50%;
@@ -69,7 +63,9 @@ $reels-height: calc($rows-number * $symbol-size-small + $reels-padding * 2);
 
 @media only screen and (min-width: $xs) {
   $reels-height: calc($rows-number * $symbol-size + $reels-padding * 2);
+  
   @include animation-bonus(bonus, $reels-height);
+
   .reels {
     @include reels-width($symbol-size);
     height: $reels-height;
@@ -77,5 +73,36 @@ $reels-height: calc($rows-number * $symbol-size-small + $reels-padding * 2);
     &__bonus {
       font-size: $font-huge;
     }
+  
+  }
+}
+
+
+@media only screen and (min-width: 480px) {
+  .reels {
+    width: 80vw !important;
+
+    // Keep existing media query styles
+    $reels-height: calc($rows-number * $symbol-size + $reels-padding * 2);
+    height: $reels-height;
+
+    &__bonus {
+      font-size: $font-huge;
+    }
+  }
+}
+
+@keyframes bonus-small {
+  0% {
+    transform: translate(-50%, calc($reels-height / 2)) scale(0);
+  }
+  20% {
+    transform: translate(-50%, calc($reels-height / 2)) scale(2);
+  }
+  50% {
+    transform: translate(-50%, calc($reels-height / 2)) scale(2);
+  }
+  100% {
+    transform: translate(-50%, -100%) scale(0);
   }
 }

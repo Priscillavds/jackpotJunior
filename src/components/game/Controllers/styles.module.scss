@@ -6,13 +6,6 @@
   width: 100%;
   padding: 0.3rem 0.3rem 0.75rem;
   margin-top: 0.5rem;
-  background: linear-gradient(to bottom, $color-blue, darken($color-blue, 20%));
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.2rem rgba($color-black, 0.5);
 
   &__settings {
     display: flex;
