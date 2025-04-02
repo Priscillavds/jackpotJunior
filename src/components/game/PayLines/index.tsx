@@ -107,7 +107,7 @@ const PayLines: React.FC = () => {
     }
     const context = canvasRef.current?.getContext('2d') as CanvasRenderingContext2D;
     // adjust canvas dimension to be accurate with pixel-based calculations
-    canvasRef.current.width = canvasRef.current?.offsetWidth;
+    canvasRef.current.width = canvasRef.current?.offsetWidth*0.55;
     canvasRef.current.height = canvasRef.current?.offsetHeight;
     const payLinesMetadata: PayLine[] = getPayLinesMetadata();
     const lineNumbersData: LineNumberSquareData = getLineNumberSquaresData(payLinesMetadata);

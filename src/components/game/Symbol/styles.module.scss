@@ -55,6 +55,15 @@
     &--showing {
       top: calc($symbol-size * var(--symbol-index));
     }
+    
+    // Add new styles for margin-left
+    margin-left: auto; // Default behavior for larger screens
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .symbol {
+    margin-left: 20%; // New rule added here for specific screen size
   }
 }
 
