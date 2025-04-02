@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 const WinsDisplay: React.FC = () => {
   const credits = useSelector((state: State) => state.slotMachine.credits);
-  const freeSpins = useSelector((state: State) => state.slotMachine.freeSpins);
+  //const freeSpins = useSelector((state: State) => state.slotMachine.freeSpins);
   const winPayLines = useSelector((state: State) => state.slotMachine.winPayLines);
   const [t] = useTranslation();
 
