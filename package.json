@@ -1,7 +1,7 @@
 {
   "name": "js-slot-machine",
   "version": "0.1.0",
-  "homepage": "https://marianapatcosta.github.io/js-slots-cra",
+  "homepage": "https://priscillavds.me/js-slots-cra",
   "private": true,
   "dependencies": {
     "craco": "^0.0.3",
