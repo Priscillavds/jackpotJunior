@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jackpotJunior/static/css/main.acf4f3df.css",
-    "main.js": "/jackpotJunior/static/js/main.56767337.js",
+    "main.css": "/jackpotJunior/static/css/main.11ca3970.css",
+    "main.js": "/jackpotJunior/static/js/main.485e4f53.js",
     "static/media/mixkit-retro-arcade-casino-notification-211.wav": "/jackpotJunior/static/media/mixkit-retro-arcade-casino-notification-211.a6251be4db4ddd9c584d.wav",
     "static/media/mixkit-slot-machine-win-alert-1931.wav": "/jackpotJunior/static/media/mixkit-slot-machine-win-alert-1931.6cd1ae7021dc6c8692d7.wav",
     "static/media/NotoSerif-Bold.ttf": "/jackpotJunior/static/media/NotoSerif-Bold.0aacbc832fb391fc6a04.ttf",
@@ -31,11 +31,11 @@
     "static/media/6.svg": "/jackpotJunior/static/media/6.dc5fda524974c7f9c7de2f2efb9a8a0a.svg",
     "static/media/8.svg": "/jackpotJunior/static/media/8.c70e15d4133fb758236c0dbe64e7a524.svg",
     "index.html": "/jackpotJunior/index.html",
-    "main.acf4f3df.css.map": "/jackpotJunior/static/css/main.acf4f3df.css.map",
-    "main.56767337.js.map": "/jackpotJunior/static/js/main.56767337.js.map"
+    "main.11ca3970.css.map": "/jackpotJunior/static/css/main.11ca3970.css.map",
+    "main.485e4f53.js.map": "/jackpotJunior/static/js/main.485e4f53.js.map"
   },
   "entrypoints": [
-    "static/css/main.acf4f3df.css",
-    "static/js/main.56767337.js"
+    "static/css/main.11ca3970.css",
+    "static/js/main.485e4f53.js"
   ]
 }
