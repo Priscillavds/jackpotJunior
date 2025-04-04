@@ -1,4 +1,3 @@
-import { LIGHTS_NUMBER } from '@/game-configs';
 import styles from './styles.module.scss';
 
 interface LightsProps {
