@@ -104,12 +104,8 @@ const Controllers: React.FC<ControllersProps> = ({ isSpinning, onSpin }) => {
         buttonSound={isSoundOn ? casinoPressSound : null}
         onClick={onSpin}
       />
-      <Button
-        label={t('controllers.autoSpin')}
-        isPressed={isAutoSpinOn}
-        buttonSound={isSoundOn ? selectPressSound : null}
-        onClick={() => handleUpdateControllersState(AUTO_SPIN_STATE_CHANGED, !isAutoSpinOn)}
-      />
+      
+
       <Button
         label={t('controllers.payLines')}
         isPressed={showPayLines && !winPayLines.length}

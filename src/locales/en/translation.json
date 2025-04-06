@@ -12,12 +12,12 @@
   },
   "controllers": {
     "autoSpin": "Auto Spin",
-    "bet": "Bet",
+    "bet": "",
     "changeBet": "Change game bet.",
     "checkInfo": "Click to learn more about this game.",
     "checkSettings": "Click to check and change game settings.",
     "payLines": "Pay Lines",
-    "spin": "Spin"
+    "spin": "SPELEN"
   },
   "header": {
     "copiedToClipboard": "Copied to clipboard.",
@@ -50,8 +50,8 @@
     "description": "Allows the player to choose to start a new game or not.",
     "doNotShowAgain": "Do not show this message again",
     "resetGame": "You have an ongoing game. Do you want to discard it?",
-    "resetGameNoCredits": "You run out of credits. Start a new game?",
-    "title": "Reset Game"
+    "resetGameNoCredits": "Helaas, je bent blut. Start je een nieuwe spel?",
+    "title": "Herstart spel"
   },
   "settings": {
     "changeDarkMode": "Click to {{status}} dark mode.",
@@ -67,7 +67,7 @@
     "unmute": "unmute"
   },
   "slot": {
-    "credits": "Credits",
+    "credits": "",
     "creditsDescription": "You have {{credits}} credits.",
     "freeSpins": "Free spins",
     "freeSpinsDescription": "You have {{freeSpins}} free spins."

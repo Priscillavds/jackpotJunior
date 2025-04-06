@@ -45,15 +45,20 @@ const InputNumber: React.FC<InputNumberProps> = ({
           disabled={value <= min}
           onClick={onDecreaseBet}
         />
-        <input
-          id={label}
-          type="number"
-          disabled={disabled}
-          value={value}
-          min={min}
-          max={max}
-          {...rest}
-        />
+<div>
+<label htmlFor={label} style={{ width: '50px' }}>Inleg</label>
+
+  <input
+    id={label}
+    type="number"
+    disabled={disabled}
+    value={value} // Only display the number here
+    min={min}
+    max={max}
+    {...rest}
+  />
+</div>
+
         <Button
           label="+"
           aria-label={t('settings.changeSoundsStatus')}

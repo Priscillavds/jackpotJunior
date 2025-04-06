@@ -17,13 +17,9 @@
   }
 
   &__container {
-    background-color: $color-orange;
-    box-shadow: 0 0.125rem 0.2rem rgba($color-black, 0.5);
-    background: linear-gradient(to bottom, lighten($color-orange, 20%), $color-orange);
-    border: 0.125rem solid lighten($color-orange, 10%);
+    border: 0.125rem solid black;
     border-width: 0.2rem 0.2rem 0.25rem;
     padding: 0 0.3rem 0.2rem;
-    border-radius: 0.25rem;
     display: flex;
   }
 
